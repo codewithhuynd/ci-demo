@@ -1,4 +1,7 @@
 # score.py
+import math
+
+
 def is_valid_score(score):
     if isinstance(score, bool) or not isinstance(score, (int, float)):
         raise TypeError("Diem phai la kieu so")
