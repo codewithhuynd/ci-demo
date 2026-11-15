@@ -19,3 +19,6 @@ class TestScoreValidation(unittest.TestCase):
     def test_invalid_type_raises_error(self):
         with self.assertRaises(TypeError):
             is_valid_score("8")
+
+    def test_valid_near_boundary(self):
+        self.assertTrue(is_valid_score(9.99))
